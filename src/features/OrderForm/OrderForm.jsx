@@ -27,6 +27,8 @@ const validateName = (value) => {
 const validatePhone = (value) => {
   if (!value) {
     return "Телефон должен быть заполнен";
+  }else if (!/^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(value)) {
+    return "Телефон должен соответствовать формату +7(XXX)XXX-XX-XX";
   }
 };
 const validateEmail = (value) => {
