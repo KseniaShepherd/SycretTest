@@ -1,0 +1,44 @@
+.selectForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  z-index: 3;
+}
+.certificateInfo {
+  margin: 30px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.certifocateDescription {
+  width: 400px;
+}
+h4 {
+  display: flex;
+  align-items: center;
+}
+h4 > div {
+  display: inline-block;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #888;
+  margin: 6px;
+}
+
+.newPrice {
+  color: #e60023;
+  font-weight: bold;
+  margin: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .selectForm {
+    max-width: 100%;
+  }
+}

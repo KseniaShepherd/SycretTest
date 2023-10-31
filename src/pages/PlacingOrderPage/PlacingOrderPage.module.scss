@@ -1,0 +1,59 @@
+.placingOrderPage {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.orderForm {
+  grid-column: 1/2;
+  z-index: 2;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.img {
+  grid-column: 2/3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1697px) {
+  .placingOrderPage {
+    grid-template-columns: 100%;
+    align-items: start;
+    width: 100%;
+    height: max-content;
+  }
+
+  .orderForm {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .orderForm {
+    justify-content: center;
+  }
+
+  .orderForm input {
+    width: 95vw;
+  }
+}
