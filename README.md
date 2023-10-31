@@ -29,5 +29,4 @@ Web application for selecting and purchasing gift certificates.
 
 ### Available Scripts:
 - `npm start`: Starts the development server
-- `npm build`: Builds the app for production
-- `npm test`: Run tests
+- `npm run build`: Builds the app for production
